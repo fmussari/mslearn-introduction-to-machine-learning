@@ -356,7 +356,8 @@ def scatter_2D(df:pandas.DataFrame,
                 y=selected_columns[1],
                 color=selected_columns[2],
                 labels=axis_labels,
-                hover_data=[label_size],
+                # Next line makes the script fail when running in Colab
+                # hover_data=[label_size],
                 title=title
                 )
 
