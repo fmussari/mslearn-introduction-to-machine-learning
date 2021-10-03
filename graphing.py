@@ -226,7 +226,8 @@ def multiple_histogram(df:pandas.DataFrame,
             nbinsx=nbins))
 
     #Place legend title
-    fig.update_layout(legend_title_text=label_group)
+    ## Por error en Colab, comento la siguiente línea
+    # fig.update_layout(legend_title_text=label_group)
 
     # Show the plot, if requested
     if show:
