@@ -227,6 +227,8 @@ def multiple_histogram(df:pandas.DataFrame,
 
     #Place legend title
     ## Por error en Colab, comento la siguiente línea
+    # Colab plotly 4.4.1 y en Microsoft plotly 4.14.3
+    # ValueError: Invalid property specified for object of type plotly.graph_objs.Layout: 'legend_title_text' (?)
     # fig.update_layout(legend_title_text=label_group)
 
     # Show the plot, if requested
