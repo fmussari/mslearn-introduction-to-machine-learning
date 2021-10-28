@@ -386,7 +386,8 @@ def scatter_2D(df:pandas.DataFrame,
         evaluate_for = numpy.linspace(x_min, x_max, num=200)
         shapes = []
         # print(f"Graph - trendline: {trendline}")
-        for t,colour in zip(trendline,colours_trendline):
+        for t,colour in zip(trendline, colours_trendline):
+            print(f"colour: {colour}")
             # print(f"Graph - evaluate_for: {evaluate_for}")
             y_vals = t(evaluate_for)
             path = "M" + " L ".join([str(c[0]) + " " + str(c[1]) for c in zip(evaluate_for,y_vals)])
