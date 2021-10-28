@@ -45,7 +45,7 @@ pio.templates.default = "plotly_white+custom_template"
 # such as "looking at the red line". Changing the variable below may result 
 # in this text being inconsistent
 colours_trendline = px.colors.qualitative.Set1
-print(colours_trendline)
+print(f"colours_trendline: {colours_trendline}")
 
 def _to_human_readable(text:str):
     '''
